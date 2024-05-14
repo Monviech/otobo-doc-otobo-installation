@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-05-14 06:01+0000\n"
+"PO-Revision-Date: 2024-05-14 09:55+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -3566,8 +3566,9 @@ msgid "``PasswordHistory``"
 msgstr "`` PasswordHistory ``"
 
 #: ../../content/migration-from-otrs.rst:478
+#, fuzzy
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../content/migration-from-otrs.rst:480
 #, fuzzy
