@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the OTOBO Installation
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
-#, fuzzy
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2024-05-14 06:01+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>\n"
+"Language-Team: Spanish (Mexico) <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/es_MX/>\n"
+"Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -43,8 +45,9 @@ msgid "The output of the script:"
 msgstr ""
 
 #: ../../content/backup-restore.rst:70
+#, fuzzy
 msgid "Restore"
-msgstr ""
+msgstr "Restaurar"
 
 #: ../../content/backup-restore-docker.rst:65
 #: ../../content/backup-restore.rst:74
@@ -2040,8 +2043,9 @@ msgid "``docker-compose exec nginx nginx -s reload`` reload nginx"
 msgstr ""
 
 #: ../../content/installation-docker.rst:704
+#, fuzzy
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: ../../content/installation-docker.rst:706
 msgid "Finally, here is a highly subjective collection of links."
@@ -2194,8 +2198,9 @@ msgid ""
 msgstr ""
 
 #: ../../content/introduction.rst:12
+#, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #: ../../content/introduction.rst:14
 msgid ""
@@ -3011,8 +3016,9 @@ msgid "Password Policy Rule"
 msgstr ""
 
 #: ../../content/migration-from-otrs.rst:470
+#, fuzzy
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: ../../content/migration-from-otrs.rst:472
 msgid "``PasswordMinSize``"
@@ -3029,8 +3035,9 @@ msgstr ""
 #: ../../content/migration-from-otrs.rst:474
 #: ../../content/migration-from-otrs.rst:476
 #: ../../content/migration-from-otrs.rst:484
+#, fuzzy
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: ../../content/migration-from-otrs.rst:476
 msgid "``PasswordNeedDigit``"
@@ -3057,8 +3064,9 @@ msgid "``PasswordWarnBeforeExpiry``"
 msgstr ""
 
 #: ../../content/migration-from-otrs.rst:482
+#, fuzzy
 msgid "5 days"
-msgstr ""
+msgstr "5 días"
 
 #: ../../content/migration-from-otrs.rst:484
 msgid "``PasswordChangeAfterFirstLogin``"
@@ -3273,8 +3281,9 @@ msgid ""
 msgstr ""
 
 #: ../../content/performance-tuning.rst:18
+#, fuzzy
 msgid "Ticket Index Module"
-msgstr ""
+msgstr "Módulo de Indices de Tickets"
 
 #: ../../content/performance-tuning.rst:20
 msgid ""
@@ -4591,4 +4600,3 @@ msgid ""
 "*scripts/update.sh* will be made available in OTOBO 10.0.8. This script "
 "runs the commands, starting with the **docker-compose pull** command."
 msgstr ""
-
