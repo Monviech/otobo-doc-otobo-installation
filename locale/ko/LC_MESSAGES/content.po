@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-02-24 11:08+0000\n"
+"PO-Revision-Date: 2024-05-16 22:46+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Language-Team: Korean <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/ko/>\n"
 "Language: ko\n"
-"Language-Team: Korean <https://translate.otobo.org/projects/otobo-11"
-"/installation-manual/ko/>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -2983,10 +2983,11 @@ msgid ""
 msgstr "OTRS에서 마이그레이션 / ((OTRS)) 커뮤니티 에디션 버전 6에서 오토보 버전 10.1로 마이그레이션"
 
 #: ../../content/migration-from-otrs.rst:15
+#, fuzzy
 msgid ""
 "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade "
 "your OTOBO to version 11."
-msgstr ""
+msgstr "먼저 OTRS를 OTOBO 버전 10.1로 마이그레이션한 다음 OTOBO를 버전 11로 업그레이드하세요."
 
 #: ../../content/migration-from-otrs.rst:17
 #, fuzzy
@@ -3382,15 +3383,17 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-암호 정책"
 
 #: ../../content/migration-from-otrs.rst:145
+#, fuzzy
 msgid ""
 "The following OTOBO packages have been integrated into OTOBO 11.0. This "
 "means that they should not be installed in the target system when the "
 "target system is OTOBO 11."
-msgstr ""
+msgstr "다음 OTOBO 패키지는 OTOBO 11.0에 통합되었습니다. 즉, 대상 시스템이 OTOBO 11인 경우 대상 시스템에 설치해서는 안 됩니다."
 
 #: ../../content/migration-from-otrs.rst:147
+#, fuzzy
 msgid "ImportExport"
-msgstr ""
+msgstr "가져오기 내보내기"
 
 #: ../../content/migration-from-otrs.rst:150
 #, fuzzy
@@ -5985,11 +5988,12 @@ msgid "Update OTOBO"
 msgstr "오토보 업데이트"
 
 #: ../../content/updating-docker.rst:80
+#, fuzzy
 msgid ""
 "Please note that minor or major upgrades must always be carried out one "
 "after the other. If you would like to upgrade from version 10.0.* to the "
 "latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
-msgstr ""
+msgstr "마이너 또는 메이저 업그레이드는 항상 차례로 진행해야 한다는 점에 유의하세요. 버전 10.0.*에서 최신 11.0.*으로 업그레이드하려면 먼저 10.1로 업그레이드한 다음 11.0으로 업그레이드하세요."
 
 #: ../../content/updating-docker.rst:82
 #, fuzzy
@@ -6030,4 +6034,3 @@ msgstr ""
 
 #~ msgid "These instructions apply only to OTOBO 10.0.6 or later."
 #~ msgstr "이 지침은 OTOBO 10.0.6 이상에만 적용됩니다."
-

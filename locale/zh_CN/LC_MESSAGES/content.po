@@ -4,13 +4,14 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# DeepL <noreply-mt-deepl@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-05-14 09:55+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>\n"
+"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -177,8 +178,9 @@ msgid ""
 msgstr "一旦连接到 MySQL 服务器，就可以删除并重新创建 `otobo` 数据库。"
 
 #: ../../content/customer-interface-ci.rst:12
+#, fuzzy
 msgid "Adapt customer interface with corporate identity"
-msgstr ""
+msgstr "根据企业形象调整客户界面"
 
 #: ../../content/customer-interface-ci.rst:14
 #, fuzzy
@@ -280,8 +282,9 @@ msgid ""
 msgstr "要移除不透明度，请调整文件中的**#oooLoginBG > .oooBG** 选项"
 
 #: ../../content/customer-interface-ci.rst:69
+#, fuzzy
 msgid "``var/httpd/htdocs/skins/Customer/default/css/Core.Login.css``"
-msgstr ""
+msgstr "``var/httpd/htdocs/skins/Customer/default/css/Core.Login.css``"
 
 #: ../../content/customer-interface-ci.rst:82
 #, fuzzy
@@ -303,8 +306,9 @@ msgid ""
 msgstr "请在下一步中将文件添加到 opm 软件包中，以便更改保持持久。您可以在我们的《管理员手册》中找到相关说明： https://doc.otobo.org/manual/developer/10.1/en/content/how-to-publish-otobo-extensions.html"
 
 #: ../../content/customer-interface-ci.rst:104
+#, fuzzy
 msgid "Change Customer Dashboard tiles and options"
-msgstr ""
+msgstr "更改客户仪表板磁贴和选项"
 
 #: ../../content/customer-interface-ci.rst:106
 #, fuzzy
@@ -1219,12 +1223,14 @@ msgid ""
 msgstr "与 *.docker_compose_env_https* 类似，但提供了单点登录的设置示例。请注意，Kerberos 支持仍处于**实验阶段。"
 
 #: ../../content/installation-docker.rst:99
+#, fuzzy
 msgid ".docker_compose_env_http_selenium and .docker_compose_env_https_selenium"
-msgstr ""
+msgstr ".docker_compose_env_http_selenium 和 .docker_compose_env_https_selenium"
 
 #: ../../content/installation-docker.rst:99
+#, fuzzy
 msgid "These are used only for development when Selenium testing is activated."
-msgstr ""
+msgstr "这些仅在激活 Selenium 测试时用于开发。"
 
 #: ../../content/installation-docker.rst:103
 #, fuzzy
@@ -1742,8 +1748,9 @@ msgid "OTOBO_NGINX_KERBEROS_DEFAULT_DOMAIN"
 msgstr "otobo_nginx_kerberos_default_domain"
 
 #: ../../content/installation-docker.rst:319
+#, fuzzy
 msgid "Kerberos Default Domain. Used in */etc/krb5.conf*."
-msgstr ""
+msgstr "Kerberos 默认域。用于 */etc/krb5.conf*。"
 
 #: ../../content/installation-docker.rst:322
 #, fuzzy
@@ -2021,8 +2028,9 @@ msgid ""
 msgstr "默认情况下，端口443和80分别为HTTPS和HTTP服务。在某些情况下，其他服务可能已经使用了这些端口中的一个或两个。在这些情况下，可以通过在* .env *文件中指定`OTOBO_WEB_HTTP_PORT`和`OTOBO_WEB_HTTPS_PORT`来覆盖默认端口。"
 
 #: ../../content/installation-docker.rst:472
+#, fuzzy
 msgid "Skip startup of specific services"
-msgstr ""
+msgstr "跳过特定服务的启动"
 
 #: ../../content/installation-docker.rst:474
 #, fuzzy
@@ -2413,8 +2421,9 @@ msgid "Finally, here is a highly subjective collection of links."
 msgstr "最后，这里收集了一些主观性很强的链接。"
 
 #: ../../content/installation-docker.rst:708
+#, fuzzy
 msgid "**General info and tutorials**"
-msgstr ""
+msgstr "**一般信息和教程**"
 
 #: ../../content/installation-docker.rst:710
 #, fuzzy
@@ -2479,8 +2488,9 @@ msgid ""
 msgstr "`自己签名的证书：<https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-18-04>`_"
 
 #: ../../content/installation-docker.rst:722
+#, fuzzy
 msgid "**Troubleshooting**"
-msgstr ""
+msgstr "**故障排除**"
 
 #: ../../content/installation-docker.rst:724
 #, fuzzy
@@ -2642,16 +2652,18 @@ msgid ""
 msgstr "我们假定 OTOBO 将安装到目录 ``/opt/otobo``。如果要将 OTOBO 安装到其他位置，则必须更改命令中的路径或创建指向该目录的符号链接。"
 
 #: ../../content/migration-from-otrs.rst:12
+#, fuzzy
 msgid ""
 "Migration from OTRS 6 or OTRS 7 / ((OTRS)) Community Edition to OTOBO "
 "version 10.1"
-msgstr ""
+msgstr "从 OTRS 6 或 OTRS 7 / ((OTRS)) 迁移到 OTOBO 10.1 版社区版迁移至 OTOBO 10.1 版"
 
 #: ../../content/migration-from-otrs.rst:15
+#, fuzzy
 msgid ""
 "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade "
 "your OTOBO to version 11."
-msgstr ""
+msgstr "请先将 OTRS 迁移到 OTOBO 10.1 版，然后将 OTOBO 升级到 11 版。"
 
 #: ../../content/migration-from-otrs.rst:17
 #, fuzzy
@@ -2702,8 +2714,9 @@ msgid ""
 msgstr "通过 OTOBO 迁移接口，可以采用以下迁移策略："
 
 #: ../../content/migration-from-otrs.rst:36
+#, fuzzy
 msgid "The general migration strategy."
-msgstr ""
+msgstr "一般迁移策略。"
 
 #: ../../content/migration-from-otrs.rst:38
 #, fuzzy
@@ -2713,8 +2726,9 @@ msgid ""
 msgstr "这是执行迁移的常规方法。支持多种不同的组合："
 
 #: ../../content/migration-from-otrs.rst:41
+#, fuzzy
 msgid "Change server:"
-msgstr ""
+msgstr "更换服务器："
 
 #: ../../content/migration-from-otrs.rst:41
 #, fuzzy
@@ -2787,10 +2801,11 @@ msgid ""
 msgstr "当源数据库不能承受增加的负载或访问源数据库是一个瓶颈时，使用类似 ETL 的迁移。在一般策略中，首先从 *otrs* 数据库逐行读取数据，然后插入 OTOBO 数据库。在此变体中，首先导出完整的 *otrs* 数据库表，然后进行转换，最后导入 *otobo* 数据库。"
 
 #: ../../content/migration-from-otrs.rst:64
+#, fuzzy
 msgid ""
 "Migration from an Oracle based OTRS 6 / OTRS 7 installation to an Oracle "
 "based OTOBO installation."
-msgstr ""
+msgstr "从基于 Oracle 的 OTRS 6 / OTRS 7 安装迁移到基于 Oracle 的 OTOBO 安装。"
 
 #: ../../content/migration-from-otrs.rst:66
 #, fuzzy
@@ -3004,15 +3019,17 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-PasswordPolicy"
 
 #: ../../content/migration-from-otrs.rst:145
+#, fuzzy
 msgid ""
 "The following OTOBO packages have been integrated into OTOBO 11.0. This "
 "means that they should not be installed in the target system when the "
 "target system is OTOBO 11."
-msgstr ""
+msgstr "下列 OTOBO 软件包已集成到 OTOBO 11.0 中。这意味着当目标系统为 OTOBO 11 时，不应在目标系统中安装这些软件包。"
 
 #: ../../content/migration-from-otrs.rst:147
+#, fuzzy
 msgid "ImportExport"
-msgstr ""
+msgstr "导入导出"
 
 #: ../../content/migration-from-otrs.rst:150
 #, fuzzy
@@ -4843,8 +4860,9 @@ msgid "`-pass = Password from user otrs32-centos6 (Active Directory User)`"
 msgstr "`-pass = 用户 otrs32-centos6 的密码（Active Directory 用户）\"。"
 
 #: ../../content/sso-kerberos.rst:56
+#, fuzzy
 msgid "`-out = c:/krb5.keytab`"
-msgstr ""
+msgstr "`-out = c:/krb5.keytab`"
 
 #: ../../content/sso-kerberos.rst:60
 #, fuzzy
@@ -4901,11 +4919,12 @@ msgid ""
 msgstr "# 在默认配置中，krb5.conf 文件会自动生成 # OTOBO_NGINX_KERBEROS_CONFIG=/opt/otobo-docker/nginx-conf/krb5.conf"
 
 #: ../../content/sso-kerberos.rst:120
+#, fuzzy
 msgid ""
 "# Kerberos Service Name "
 "OTOBO_NGINX_KERBEROS_SERVICE_NAME=HTTP/otrs32-centos6.otrs.local # -> "
 "Picture Number 1"
-msgstr ""
+msgstr "# Kerberos 服务名称 OTOBO_NGINX_KERBEROS_SERVICE_NAME=HTTP/otrs32-centos6.otrs.local # -> 图片编号 1"
 
 #: ../../content/sso-kerberos.rst:123
 #, fuzzy
@@ -5012,8 +5031,9 @@ msgid "network.negotiate-auth.delegation-uris = http:// (or https://otobofqdn)"
 msgstr "network.negotiate-auth.delegation-uris = http://（或 https://otobofqdn）"
 
 #: ../../content/sso-kerberos.rst:185
+#, fuzzy
 msgid "Debugging and Problems"
-msgstr ""
+msgstr "调试和问题"
 
 #: ../../content/sso-kerberos.rst:187
 #, fuzzy
@@ -5306,11 +5326,12 @@ msgid "Some maintainance tasks must be executed."
 msgstr "必须执行一些维护任务。"
 
 #: ../../content/updating-docker.rst:30
+#, fuzzy
 msgid ""
 "In the sample commands below, the version **11.x.y**, corresponding to "
 "the tag **11_x_y**, is used as the example version. Please substitute it "
 "with the real version, e.g. **11.0.7**."
-msgstr ""
+msgstr "在下面的示例命令中，版本 **11.x.y**（对应标签 **11_x_y**）被用作示例版本。请用真实版本代替，如**11.0.7**。"
 
 #: ../../content/updating-docker.rst:34
 #, fuzzy
@@ -5364,11 +5385,12 @@ msgid "Update OTOBO"
 msgstr "更新 OTOBO"
 
 #: ../../content/updating-docker.rst:80
+#, fuzzy
 msgid ""
 "Please note that minor or major upgrades must always be carried out one "
 "after the other. If you would like to upgrade from version 10.0.* to the "
 "latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
-msgstr ""
+msgstr "请注意，小升级或大升级必须相继进行。如果您想从 10.0.* 升级到最新的 11.0.*，请先升级到 10.1，然后再升级到 11.0。"
 
 #: ../../content/updating-docker.rst:82
 #, fuzzy
@@ -5378,8 +5400,9 @@ msgid ""
 msgstr "在此步骤中，将更新 *otobo_opt_otobo* 卷，并执行以下 OTOBO 控制台命令："
 
 #: ../../content/updating-docker.rst:84
+#, fuzzy
 msgid "Admin::Package::ReinstallAll"
-msgstr ""
+msgstr "Admin::Package::ReinstallAll"
 
 #: ../../content/updating-docker.rst:85
 #, fuzzy

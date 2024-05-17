@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the OTOBO Installation
 # Guide package.
 # OpenAI <noreply-mt-openai@weblate.org>, 2024.
+# DeepL <noreply-mt-deepl@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-02-23 23:28+0000\n"
-"Last-Translator: OpenAI <noreply-mt-openai@weblate.org>\n"
+"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Language-Team: Portuguese <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/pt/>\n"
 "Language: pt\n"
-"Language-Team: Portuguese <https://translate.otobo.org/projects/otobo-11"
-"/installation-manual/pt/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -3324,10 +3325,11 @@ msgstr ""
 "10.1"
 
 #: ../../content/migration-from-otrs.rst:15
+#, fuzzy
 msgid ""
 "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade "
 "your OTOBO to version 11."
-msgstr ""
+msgstr "Por favor, migre primeiro o seu OTRS para a versão 10.1 do OTOBO e depois actualize o seu OTOBO para a versão 11."
 
 #: ../../content/migration-from-otrs.rst:17
 #, fuzzy
@@ -3774,15 +3776,17 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-PasswordPolicy"
 
 #: ../../content/migration-from-otrs.rst:145
+#, fuzzy
 msgid ""
 "The following OTOBO packages have been integrated into OTOBO 11.0. This "
 "means that they should not be installed in the target system when the "
 "target system is OTOBO 11."
-msgstr ""
+msgstr "Os seguintes pacotes OTOBO foram integrados na OTOBO 11.0. Isto significa que não devem ser instalados no sistema de destino quando o sistema de destino é o OTOBO 11."
 
 #: ../../content/migration-from-otrs.rst:147
+#, fuzzy
 msgid "ImportExport"
-msgstr ""
+msgstr "ImportarExportar"
 
 #: ../../content/migration-from-otrs.rst:150
 #, fuzzy
@@ -6719,11 +6723,12 @@ msgid "Update OTOBO"
 msgstr "Atualizar OTOBO"
 
 #: ../../content/updating-docker.rst:80
+#, fuzzy
 msgid ""
 "Please note that minor or major upgrades must always be carried out one "
 "after the other. If you would like to upgrade from version 10.0.* to the "
 "latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
-msgstr ""
+msgstr "Tenha em atenção que as actualizações maiores ou menores devem ser sempre efectuadas uma após a outra. Se pretender atualizar da versão 10.0.* para a versão 11.0.* mais recente, actualize primeiro para a 10.1 e depois para a 11.0."
 
 #: ../../content/updating-docker.rst:82
 #, fuzzy
@@ -6768,4 +6773,3 @@ msgstr ""
 
 #~ msgid "These instructions apply only to OTOBO 10.0.6 or later."
 #~ msgstr "Estas instruções se aplicam apenas ao OTOBO 10.0.6 ou posterior."
-

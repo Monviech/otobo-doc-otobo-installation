@@ -4,20 +4,21 @@
 # Guide package.
 # Kozo Sakurai <sakurai@io-architect.com>, 2022, 2023.
 # OpenAI <noreply-mt-openai@weblate.org>, 2024.
+# DeepL <noreply-mt-deepl@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-02-23 23:28+0000\n"
-"Last-Translator: OpenAI <noreply-mt-openai@weblate.org>\n"
+"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Language-Team: Japanese <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/ja/>\n"
 "Language: ja\n"
-"Language-Team: Japanese <https://translate.otobo.org/projects/otobo-11"
-"/installation-manual/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -2859,10 +2860,11 @@ msgid ""
 msgstr "OTRS / ((OTRS)) コミュニティエディションバージョン6からOTOBOバージョン10.1への移行"
 
 #: ../../content/migration-from-otrs.rst:15
+#, fuzzy
 msgid ""
 "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade "
 "your OTOBO to version 11."
-msgstr ""
+msgstr "まず OTRS を OTOBO バージョン 10.1 に移行し、その後 OTOBO をバージョン 11 にアップグレードしてください。"
 
 #: ../../content/migration-from-otrs.rst:17
 #, fuzzy
@@ -3237,15 +3239,17 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-パスワードポリシー"
 
 #: ../../content/migration-from-otrs.rst:145
+#, fuzzy
 msgid ""
 "The following OTOBO packages have been integrated into OTOBO 11.0. This "
 "means that they should not be installed in the target system when the "
 "target system is OTOBO 11."
-msgstr ""
+msgstr "以下のOTOBOパッケージはOTOBO11.0に統合されました。このため、ターゲットシステムが OTOBO 11 の場合、これらのパッケージはターゲットシステムにインストールしないでください。"
 
 #: ../../content/migration-from-otrs.rst:147
+#, fuzzy
 msgid "ImportExport"
-msgstr ""
+msgstr "インポートエクスポート"
 
 #: ../../content/migration-from-otrs.rst:150
 #, fuzzy
@@ -5718,11 +5722,12 @@ msgid "Update OTOBO"
 msgstr "OTOBOをアップデート"
 
 #: ../../content/updating-docker.rst:80
+#, fuzzy
 msgid ""
 "Please note that minor or major upgrades must always be carried out one "
 "after the other. If you would like to upgrade from version 10.0.* to the "
 "latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
-msgstr ""
+msgstr "マイナーアップグレード、メジャーアップグレードは必ず順番に行う必要があります。バージョン10.0.*から最新の11.0.*にアップグレードする場合は、まず10.1にアップグレードしてから11.0にアップグレードしてください。"
 
 #: ../../content/updating-docker.rst:82
 #, fuzzy
@@ -5763,4 +5768,3 @@ msgstr ""
 
 #~ msgid "These instructions apply only to OTOBO 10.0.6 or later."
 #~ msgstr "これらの指示はOTOBO 10.0.6以降にのみ適用されます。"
-

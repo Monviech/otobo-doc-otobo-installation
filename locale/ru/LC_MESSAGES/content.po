@@ -4,21 +4,21 @@
 # Guide package.
 # Philipp Kesler <philipp.kesler@hein.de>, 2022.
 # OpenAI <noreply-mt-openai@weblate.org>, 2024.
+# DeepL <noreply-mt-deepl@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
 "Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-14 00:14+0200\n"
-"PO-Revision-Date: 2024-02-23 23:28+0000\n"
-"Last-Translator: OpenAI <noreply-mt-openai@weblate.org>\n"
+"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Language-Team: Russian <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/ru/>\n"
 "Language: ru\n"
-"Language-Team: Russian <https://translate.otobo.org/projects/otobo-11"
-"/installation-manual/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -2968,10 +2968,11 @@ msgid ""
 msgstr "Миграция с OTRS / ((OTRS)) Community Edition версии 6 на OTOBO 10"
 
 #: ../../content/migration-from-otrs.rst:15
+#, fuzzy
 msgid ""
 "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade "
 "your OTOBO to version 11."
-msgstr ""
+msgstr "Пожалуйста, сначала переведите OTRS на OTOBO версии 10.1, а затем обновите OTOBO до версии 11."
 
 #: ../../content/migration-from-otrs.rst:17
 msgid "Welcome and thank you for choosing OTOBO!"
@@ -3359,15 +3360,17 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-PasswordPolicy"
 
 #: ../../content/migration-from-otrs.rst:145
+#, fuzzy
 msgid ""
 "The following OTOBO packages have been integrated into OTOBO 11.0. This "
 "means that they should not be installed in the target system when the "
 "target system is OTOBO 11."
-msgstr ""
+msgstr "Следующие пакеты OTOBO были интегрированы в OTOBO 11.0. Это означает, что их не следует устанавливать в целевой системе, если целевой системой является OTOBO 11."
 
 #: ../../content/migration-from-otrs.rst:147
+#, fuzzy
 msgid "ImportExport"
-msgstr ""
+msgstr "Импорт-Экспорт"
 
 #: ../../content/migration-from-otrs.rst:150
 msgid "Step 2: Deactivate ``SecureMode`` on OTOBO"
@@ -6179,11 +6182,12 @@ msgid "Update OTOBO"
 msgstr "Обновить OTOBO"
 
 #: ../../content/updating-docker.rst:80
+#, fuzzy
 msgid ""
 "Please note that minor or major upgrades must always be carried out one "
 "after the other. If you would like to upgrade from version 10.0.* to the "
 "latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
-msgstr ""
+msgstr "Обратите внимание, что мелкие и крупные обновления всегда должны выполняться последовательно. Если вы хотите перейти с версии 10.0.* на последнюю версию 11.0.*, сначала перейдите на 10.1, а затем на 11.0."
 
 #: ../../content/updating-docker.rst:82
 #, fuzzy
@@ -6244,4 +6248,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Эти инструкции применимы только к OTOBO"
 #~ " 10.0.6 или более поздним версиям."
-
