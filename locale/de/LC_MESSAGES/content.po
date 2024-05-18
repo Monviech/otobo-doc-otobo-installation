@@ -11,13 +11,14 @@
 # OpenAI <noreply-mt-openai@weblate.org>, 2024.
 # sr <sr@rother-oss.com>, 2024.
 # DeepL <noreply-mt-deepl@weblate.org>, 2024.
+# Stefan Rother <sr@rother-oss.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-05-17 00:46+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"PO-Revision-Date: 2024-05-17 22:46+0000\n"
+"Last-Translator: Stefan Rother <sr@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +94,7 @@ msgstr "Bitte lesen Sie die Anleitung Backup und Wiederherstellung :doc:`backup-
 
 #: ../../content/backup-restore-docker.rst:19
 msgid "The standard scripts ``backup.pl`` and ``restore.pl`` can also be used with OTOBO running under Docker. However some Docker specific limitations have to be considered."
-msgstr "Auch für Docker-basierte OTOBO-Umgebungen können die OTOBO-Standardskripte verwendet werden. Beachten Sie jedoch einige Docker-spezifische Besonderheiten."
+msgstr "Auch für Docker-basierte OTOBO-Umgebungen können die OTOBO-Standardskripte ``backup.pl`` und ``restore.pl`` verwendet werden. Beachten Sie jedoch einige Docker-spezifische Besonderheiten."
 
 #: ../../content/backup-restore-docker.rst:22
 msgid "First, we need to make sure that the backup files are not created in the file system that is internal to a Docker container. Because in that case the created files would be lost when the container is stopped. This means that the backup directory must located within in a volume. For this manual we only consider the most simple case, where the backup directory is a local directory on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host and ``/otobo_backup`` as the location in the container."
@@ -1289,39 +1290,33 @@ msgstr "Selbstverständlich kann das selbe Ziel auch erreicht werden, indem man 
 
 #: ../../content/installation-docker.rst:488
 msgid "Prepare offline installation"
-msgstr "Native Installation vorbereiten:"
+msgstr "Native Installation vorbereiten"
 
 #: ../../content/installation-docker.rst:490
 msgid "Please download `the latest version of otobo-docker <https://doc.otobo.org/manual/installation/10.1/en/content/installation-docker.html#clone-the-otobo-docker-repo>`__ on a system that has internet access and where docker is installed. Then navigate to the following folder *otobo-docker/docker-compose*."
 msgstr "Bitte lade `die neueste Version von otobo-docker <https://doc.otobo.org/manual/installation/10.1/de/content/installation-docker.html#clone-the-otobo-docker-repo>`__ auf einem System herunter, das Internetzugang hat und auf dem Docker installiert ist. Navigiere dann zu dem folgenden Ordner *otobo-docker/docker-compose*."
 
 #: ../../content/installation-docker.rst:499
-#, fuzzy
 msgid "Now you can run the following command to download all Docker images from a specific file, in my example I use the *otobo-base.yml*."
 msgstr "Jetzt kannst du den folgenden Befehl ausführen, um alle Docker-Images aus einer bestimmten Datei herunterzuladen, in meinem Beispiel verwende ich *otobo-base.yml*."
 
 #: ../../content/installation-docker.rst:505
-#, fuzzy
 msgid "After that, the images (.docker) are located in the docker-compose folder and can be uploaded to the target system via e.g `SCP <https://en.wikipedia.org/wiki/Secure_copy_protocol>`__."
 msgstr "Danach befinden sich die Images (.docker) im Docker-Compose-Ordner und können über z.B. `SCP <https://de.wikipedia.org/wiki/Secure_copy_protocol>`__ auf das Zielsystem hochgeladen werden."
 
 #: ../../content/installation-docker.rst:507
-#, fuzzy
 msgid "On the offline target system, go to the folder where the docker images are stored. And enter the following command to import them one by one."
 msgstr "Gehe auf dem Offline-Zielsystem in den Ordner, in dem die Docker-Images gespeichert sind. Und gib den folgenden Befehl ein, um sie nacheinander zu importieren."
 
 #: ../../content/installation-docker.rst:509
-#, fuzzy
 msgid "In the following example I import the mariadb image:"
 msgstr "Im folgenden Beispiel importiere ich das mariadb-Image:"
 
 #: ../../content/installation-docker.rst:516
-#, fuzzy
 msgid "Customizing OTOBO Docker Compose"
 msgstr "Docker Image individualisieren"
 
 #: ../../content/installation-docker.rst:518
-#, fuzzy
 msgid "Instead of editing the files under *docker-compose/* and risking to overwrite your own options with the `next update <https://doc.otobo.org/manual/installation/10.1/en/content/updating-docker.html#updating-the-docker-compose-files>`_ of the otobo-docker folder, it is advisable to create an extra YAML file where the specific services are overwritten with additional options."
 msgstr "Statt die Dateien unter *docker-compose/* zu bearbeiten und das Risiko einzugehen, deine eigenen Optionen mit dem `nächsten Update <https://doc.otobo.org/manual/installation/10.1/de/content/updating-docker.html#updating-the-docker-compose-files>`_ des otobo-docker-Ordners zu überschreiben, ist es ratsam, eine extra YAML-Datei zu erstellen, in der die spezifischen Dienste mit zusätzlichen Optionen überschrieben werden."
 
@@ -1650,12 +1645,10 @@ msgid "We assume that OTOBO will be installed to the directory ``/opt/otobo``. I
 msgstr "Wir setzen in dieser Anleitung voraus, dass OTOBO im Verzeichnis ``/opt/otobo`` installiert wird. Möchten Sie OTOBO in einem anderen Vereichnis installieren, ist es notwendig, den Pfad in den Befehlen entsprechend anzupassen oder einen symbolischen Link auf Ihr Zielverzeichnis zu erstellen."
 
 #: ../../content/migration-from-otrs.rst:12
-#, fuzzy
 msgid "Migration from OTRS 6 or OTRS 7 / ((OTRS)) Community Edition to OTOBO version 10.1"
-msgstr "Migration von OTRS / ((OTRS)) Community Edition Version 6 auf OTOBO 10.1"
+msgstr "Migration von OTRS / ((OTRS)) Community Edition Version 6 oder 7 auf OTOBO 10.1"
 
 #: ../../content/migration-from-otrs.rst:15
-#, fuzzy
 msgid "Please migrate your OTRS to OTOBO version 10.1 first and then upgrade your OTOBO to version 11."
 msgstr "Bitte migrieren Sie zuerst Ihr OTRS auf OTOBO Version 10.1 und aktualisieren Sie dann Ihr OTOBO auf Version 11."
 
@@ -1676,7 +1669,6 @@ msgid "If you have any problem or question, please do not despair. Call our supp
 msgstr "Probleme oder Fragen? Kein Grund zu Verzweifeln :) Rufen Sie unsere Support-Hotline an, schreiben Sie uns eine E-Mail oder bitten Sie im OTOBO Community Forum unter https://forum.otobo.org/ um Unterstützung. Wir werden einen Weg finden, Ihnen zu helfen!"
 
 #: ../../content/migration-from-otrs.rst:28
-#, fuzzy
 msgid "After the migration the data previously available in OTRS will be available in OTOBO 10. We do not modify any data of the OTRS installation during the migration."
 msgstr "Nach der Migration werden alle bisher in OTRS 6 verfügbaren Daten in OTOBO 10 verfügbar sein. Die Daten in Ihrem OTRS-Ursprungssystem werden während der Migration nicht verändert."
 
@@ -1745,7 +1737,6 @@ msgid "Use the ETL-like migration when the source database mustn't suffer from i
 msgstr "Verwende die ETL-ähnliche Migration, wenn die Quelldatenbank nicht durch erhöhte Last beeinträchtigt werden darf oder wenn der Zugriff auf die Quelldatenbank ein Engpass ist. In der allgemeinen Strategie werden die Daten zunächst Zeile für Zeile aus der *otrs*-Datenbank gelesen und dann in die OTOBO-Datenbank eingefügt. In dieser Variante werden die kompletten *otrs*-Datenbanktabellen zuerst exportiert, dann transformiert und anschließend in die *otobo*-Datenbank importiert."
 
 #: ../../content/migration-from-otrs.rst:64
-#, fuzzy
 msgid "Migration from an Oracle based OTRS 6 / OTRS 7 installation to an Oracle based OTOBO installation."
 msgstr "Migration von einer Oracle-basierten OTRS 6 Installation zu einer Oracle-basierten OTOBO Installation."
 
@@ -1766,12 +1757,10 @@ msgid "Migration Requirements"
 msgstr "Migrationsvoraussetzungen"
 
 #: ../../content/migration-from-otrs.rst:82
-#, fuzzy
 msgid "Basic requirement for a migration is that you already have an ((OTRS)) Community Edition or OTRS 6.0.\\* / OTRS 7.0.\\* running, and that you want to transfer both configuration and data to OTOBO."
 msgstr "Grundvoraussetzung für eine Migration ist, dass Sie bereits eine laufende ((OTRS)) Community Edition oder ein OTRS 6.0.\\* haben und dass deren Konfiguration und Daten in OTOBO übernommen werden sollen."
 
 #: ../../content/migration-from-otrs.rst:87
-#, fuzzy
 msgid "Please consider carefully whether you really need the data and configuration. Experience shows that quite often a new start is the better option. This is because in many cases the previously used installation and configuration was rather suboptimal anyways. It might also make sense to only transfer the ticket data and to change the basic configuration to OTOBO Best Practice. We are happy to advise you, please get in touch at hello@otobo.de or ask your question in the OTOBO Community forum at https://forum.otobo.org/."
 msgstr "Bitte überlegen Sie genau, ob es wirklich sinnvoll ist, bestehende Daten und Konfiguration zu übernehmen. Unsere Erfahrung zeigt, dass die bisher genutzte Installation und Konfiguration in viele Fällen eher suboptimal und ein sauberer Neustart die bessere Option ist. Auch kann es sinnvoll sein, nur die Ticketdaten zu übertragen und die Grundkonfiguration gemäß OTOBO Best Practice vorzunehmen. Hierzu beraten wir Sie gerne, wenden Sie sich einfach per Mail an hallo@otobo.de oder stellen Sie Ihre Fragen im OTOBO Community Forum unter https://forum.otobo.org/."
 
@@ -1784,7 +1773,6 @@ msgid "This OTOBO installation must contain all OPM packages installed in your O
 msgstr "Auf dieser OTOBO-Instanz müssen alle OPM-Pakete installiert sein, die Sie bisher in Ihrem OTRS nutzen und künftig in OTOBO nutzen möchten."
 
 #: ../../content/migration-from-otrs.rst:97
-#, fuzzy
 msgid "If you are planning to migrate to another server, then the OTOBO webserver must be able to access the location where your ((OTRS)) Community Edition or OTRS 6.0.* / OTRS 7.0.\\* is installed. In most cases, this is the directory */opt/otrs* on the server running OTRS. The read access can be effected via SSH or via file system mounts."
 msgstr "Wenn Sie auf einen anderen Server migrieren möchten, muss der OTOBO-Webserver in der Lage sein, auf das Verzeichnis zuzugreifen, in dem die ((OTRS)) Community Edition oder OTRS 6.0.* installiert sind. Meist ist dies das Verzeichnis */opt/otrs* auf dem Server, auf dem das OTRS läuft. Der Lesezugriff erfolgt über SSH oder Dateisystem-Mounts."
 
@@ -1805,7 +1793,6 @@ msgid "Please start with installing a new OTOBO system. Your old OTRS / ((OTRS))
 msgstr "Bitte beginnen Sie damit, das neue OTOBO-System zu installieren, auf das Sie Ihre OTRS / ((OTRS)) Community Edition anschließend migrieren möchten. Wir empfehlen dazu dringend, das Kapitel :doc:`installation` zu lesen. Installieren Sie Ihr System mit Docker, ist das Kapitel :doc:`installation-docker` relevant für Sie."
 
 #: ../../content/migration-from-otrs.rst:118
-#, fuzzy
 msgid "Under Apache, there are pitfalls with running two independent *mod_perl* applications under on the same webserver. Therefore, it is advised to run OTRS and OTOBO on separate webservers. Alternatively remove the OTRS configuration from Apache before installing OTOBO. Use the command ``a2query -s`` and check the directories */etc/apache2/sites-available* and */etc/apache2/sites-enabled* for inspecting which configurations are currently available and which are enabled."
 msgstr "Unter Apache kann es zu Problemen kommen, wenn zwei voneinander unabhängige Anwendungen zeitgleich unter mod_perl auf demselben Server laufen. Abhilfe schafft hier die mod_perl-Einstellung ``PerlOptions +Parent``. Sie sorgt dafür, dass die Anwendungen jeweils eigene Perl-Interpreter verwenden. Bitte prüfen Sie Ihre Apache-Konfigurationsdateien im Verzeichnis */etc/apache2/sites-available* und ergänzen Sie die Einstellung, falls sie noch nicht gesetzt ist."
 
@@ -1882,12 +1869,10 @@ msgid "Znuny4OTRS-PasswordPolicy"
 msgstr "Znuny4OTRS-PasswordPolicy"
 
 #: ../../content/migration-from-otrs.rst:145
-#, fuzzy
 msgid "The following OTOBO packages have been integrated into OTOBO 11.0. This means that they should not be installed in the target system when the target system is OTOBO 11."
 msgstr "Die folgenden OTOBO-Pakete sind in OTOBO 11.0 integriert worden. Das bedeutet, dass sie nicht im Zielsystem installiert werden sollten, wenn das Zielsystem OTOBO 11 ist."
 
 #: ../../content/migration-from-otrs.rst:147
-#, fuzzy
 msgid "ImportExport"
 msgstr "ImportExport"
 
@@ -2060,7 +2045,6 @@ msgid "When migrating to a new application server, or to a Docker-based installa
 msgstr "Häufig kann das System nach der Migration auf einen neuen Anwendungsserver oder nach einer Docker-basierten Installation nicht auf die Datenbank zugreifen. Das liegt meist daran, dass der OTOBO-Datenbanknutzer sich nur von dem Host aus verbinden kann, auf dem auch die Datenbank läuft. Um dennoch Zugriff auf die Datenbank zu gewährleisten, empfehlen wir die Anlage eines speziellen Datenbankbenutzers für die Migration – z. B. ``CREATE USER 'otrs_migration'@'%' IDENTIFIED BY 'otrs_migration';`` und ``GRANT SELECT, SHOW VIEW ON otrs.* TO 'otrs_migration'@'%';``. Dieser Benutzer kann nach der Migration wieder gelöscht werden: ``DROP USER 'otrs_migration'@'%'``."
 
 #: ../../content/migration-from-otrs.rst:367
-#, fuzzy
 msgid "Custom settings in *Kernel/Config.pm* are carried over from the old OTRS installation to the new OTOBO installation. When you have custom settings, then please take a look at the migrated file */opt/otobo/Kernel/Config.pm*. You might want to adapt custom pathes or LDAP settings. In the best case you might find that some custom setting are longer needed."
 msgstr "Benutzerdefinierte Einstellungen in *Kernel/Config.pm* werden von der alten OTRS-Installation auf die neue OTOBO-Installation übertragen. Wenn du benutzerdefinierte Einstellungen hast, schau dir bitte die migrierte Datei */opt/otobo/Kernel/Config.pm* an. Du möchtest vielleicht benutzerdefinierte Pfade oder LDAP-Einstellungen anpassen. Im besten Fall stellst du fest, dass einige benutzerdefinierte Einstellungen nicht mehr benötigt werden."
 
@@ -2125,7 +2109,6 @@ msgid "4. Errors in Step 5 when migrating to PostgreSQL"
 msgstr "4. Fehler in Schritt 5 bei der Migration zu PostgreSQL"
 
 #: ../../content/migration-from-otrs.rst:424
-#, fuzzy
 msgid "In these cases the not so helpful message \"System was unable to complete data transfer.\" is shown by *migration.pl*. The Apache logfile, and the OTOBO logfile, show a more meaningful message: \"Message: ERROR:  permission denied to set parameter \"session_replication_role\", SQL: 'set session_replication_role to replica;'\". In order to give the database user **otobo** the needed superuser privileges, run the following statement as the PostgreSQL admin: ``ALTER USER otobo WITH SUPERUSER;``. Then retry running http://localhost/otobo/migration.pl. After the migration, return to the normal state by running ``ALTER USER otobo WITH NOSUPERUSER``."
 msgstr "In diesen Fällen wird von *migration.pl* die nicht so hilfreiche Nachricht \"System konnte die Datenübertragung nicht abschließen.\" angezeigt. Das Apache-Logfile und das OTOBO-Logfile zeigen eine aussagekräftigere Nachricht: \"Message: ERROR: permission denied to set parameter \"session_replication_role\", SQL: 'set session_replication_role to replica;'\". Um dem Datenbankbenutzer **otobo** die benötigten Superuser-Rechte zu geben, führe den folgenden Befehl als PostgreSQL-Admin aus: ``ALTER USER otobo WITH SUPERUSER;``. Versuche dann erneut, http://localhost/otobo/migration.pl auszuführen. Nach der Migration kehre zum normalen Zustand zurück, indem du ``ALTER USER otobo WITH NOSUPERUSER`` ausführst."
 
@@ -2142,7 +2125,6 @@ msgid "5. Problems with the Deployment the Merged System Configuration"
 msgstr "5. Probleme bei der Inbetriebnahme der zusammengeführten System Konfiguration"
 
 #: ../../content/migration-from-otrs.rst:441
-#, fuzzy
 msgid "The system configuration is migrated after the database tables were migrated. In this context, migration means merging the default settings of OTOBO with the system configuration of the source OTRS system. Inconsistencies can arise in this step. An real life example is the setting ``Ticket::Frontend::AgentTicketQuickClose###State``. This setting is new in OTOBO 10 and the default value is the state ``closed successful``. But this setting is invalid when the state ``closed successful`` has been dropped or renamed in the source system. This inconsistency is detected as an error in the migration step **Migrate configuration settings**. Actually, the merged system configuration is stored in the database, but additional validity checks are performed during deployment."
 msgstr "Die Systemkonfiguration wird migriert, nachdem die Datenbanktabellen migriert wurden. In diesem Kontext bedeutet Migration das Zusammenführen der Standardeinstellungen von OTOBO mit der Systemkonfiguration des Quell-OTRS-Systems. In diesem Schritt können Inkonsistenzen auftreten. Ein Beispiel aus der Praxis ist die Einstellung ``Ticket::Frontend::AgentTicketQuickClose###State``. Diese Einstellung ist neu in OTOBO 10 und der Standardwert ist der Zustand ``closed successful``. Aber diese Einstellung ist ungültig, wenn der Zustand ``closed successful`` im Quellsystem gelöscht oder umbenannt wurde. Diese Inkonsistenz wird im Migrationsschritt **Migrate configuration settings** als Fehler erkannt. Tatsächlich wird die zusammengeführte Systemkonfiguration in der Datenbank gespeichert, aber zusätzliche Gültigkeitsprüfungen werden während der Bereitstellung durchgeführt."
 
@@ -2253,7 +2235,6 @@ msgid "Migration from Oracle to Oracle"
 msgstr "Migration von Oracle zu Oracle"
 
 #: ../../content/migration-from-otrs.rst:502
-#, fuzzy
 msgid "For migration to Oracle the ETL-like strategy must be employed. This is because Oracle provides no easy way to temporarily turn off foreign key checks."
 msgstr "Für die Migration zu Oracle muss die ETL-ähnliche Strategie angewendet werden. Dies liegt daran, dass Oracle keine einfache Möglichkeit bietet, Fremdschlüsselprüfungen vorübergehend zu deaktivieren."
 
@@ -2350,7 +2331,6 @@ msgid "This requires that an OTOBO installation is available on the Docker host.
 msgstr "Dies setzt voraus, dass eine OTRS-Installation auf dem Docker-Host verfügbar ist."
 
 #: ../../content/migration-from-otrs.rst:619
-#, fuzzy
 msgid "Alternatively, the database can be dumped on another server and then be transferred to the Docker host afterwards. An easy way to do this is to copy */opt/otobo* to the server running OTRS and perform the same command as above."
 msgstr "Alternativ können Sie die Datenbank auch auf einen anderen Server dumpen und anschließend auf den Docker-Host verschieben. Dazu können Sie folgende Beispielbefehle verwenden."
 
@@ -2367,7 +2347,6 @@ msgid "Docker-based installation:"
 msgstr "Docker-basierte OTOBO-Installation:"
 
 #: ../../content/migration-from-otrs.rst:637
-#, fuzzy
 msgid "Run the command ``mysql`` within the Docker container *db* for importing the database dump files. Note that the password for the database root is now the password that has been set up in the file *.env* on the Docker host."
 msgstr "Zum Importieren des Datenbankdumps nutzen wir ``mysql`` im Docker-Container *otobo_db_1*. Achtung: Das Passwort für den Datenbank-Root ist jetzt das in *.env*. definierte Passwort."
 
@@ -2376,7 +2355,6 @@ msgid "For a quick check whether the import worked, you can run the following co
 msgstr "Nutzen Sie die folgenden Befehlen, um zu überprüfen, ob der Import erfolgreich war."
 
 #: ../../content/migration-from-otrs.rst:657
-#, fuzzy
 msgid "or when running under Docker"
 msgstr "oder wenn es unter Docker läuft"
 
@@ -2989,12 +2967,10 @@ msgid "Please create a new Active Directory User with the following settings and
 msgstr "Bitte erstellen Sie einen neuen Active Directory Benutzer mit den folgenden Einstellungen und speichern Sie die markierten Einstellungen:"
 
 #: ../../content/sso-kerberos.rst:29
-#, fuzzy
 msgid "Please use as Username only this syntax: `HTTP/fqdn.from.your.otobo.de`. `fqdn.from.your.otobo.de` needs to be a A-Record DNS entry, not a CNAME! In the next step, it is also possible to use other URLs for OTOBO, they must then point as CNAME to our A-record defined above."
 msgstr "Bitte verwende als Benutzernamen nur diese Syntax: `HTTP/fqdn.from.your.otobo.de`. `fqdn.from.your.otobo.de` muss ein A-Record DNS-Eintrag sein, kein CNAME! Im nächsten Schritt ist es auch möglich, andere URLs für OTOBO zu verwenden, sie müssen dann als CNAME auf unseren oben definierten A-Record zeigen."
 
 #: ../../content/sso-kerberos.rst:32
-#, fuzzy
 msgid "The username part \"HTTP/\" should be written in capital letters, as Kerberos expects it that way."
 msgstr "Der Benutzername sollte in Großbuchstaben geschrieben sein, da Kerberos ihn auf diese Weise erwartet."
 
@@ -3011,7 +2987,6 @@ msgid "Generate Active Directory Keytab file"
 msgstr "Active Directory Keytab-Datei erstellen"
 
 #: ../../content/sso-kerberos.rst:45
-#, fuzzy
 msgid "In the next step, we connect to a domain controller of the Active Directory and open a console (cmd) there with administrator privileges. Now we use the tool `ktpass.exe`to generate the needed keytab file:"
 msgstr "Im nächsten Schritt verbinden wir uns mit einem Domain-Controller des Active Directory und öffnen dort eine Konsole (cmd) mit Administratorrechten. Jetzt verwenden wir das Tool `ktpass.exe`, um die benötigte Keytab-Datei zu generieren:"
 
@@ -3020,12 +2995,10 @@ msgid "`-princ = HTTP/otrs32-centos6.otrs.local@OTRS.LOCAL -> Picture Number 1+@
 msgstr "`-princ = HTTP/otrs32-centos6.otrs.local@OTRS.LOCAL -> Picture Number 1+@+Picture Number 2`"
 
 #: ../../content/sso-kerberos.rst:54
-#, fuzzy
 msgid "`-mapuser = OTRS\\otrs32-centos6  (Username prä Win 2000) ->  -> Picture Number 3+\\+Picture Number`"
 msgstr "`-mapuser = OTRS\\otrs32-centos6 (Benutzername prä Win 2000) -> -> Bildnummer 3+\\+Bildnummer`"
 
 #: ../../content/sso-kerberos.rst:55
-#, fuzzy
 msgid "`-pass = Password from user otrs32-centos6 (Active Directory User)`"
 msgstr "`-pass = Passwort vom Benutzer otrs32-centos6 (Active Directory-Benutzer)`"
 
@@ -3042,7 +3015,6 @@ msgid "In the next step please move the krb5.keytab file to the OTOBO Server:"
 msgstr "Im nächsten Schritt verschieben Sie bitte die Datei krb5.keytab auf den OTOBO-Server:"
 
 #: ../../content/sso-kerberos.rst:74
-#, fuzzy
 msgid "Create a new volume for your custom nginx configuration"
 msgstr "Erstelle ein neues Volume für deine individuelle nginx-Konfiguration"
 
@@ -3051,12 +3023,10 @@ msgid "Create new OTOBO .env file"
 msgstr "Neue OTOBO .env*-Datei anlegen"
 
 #: ../../content/sso-kerberos.rst:96
-#, fuzzy
 msgid "First of all we need to move the old file ``/opt/otobo-docker/.env`` to ``.env.tmp`` and create a new ``.env`` file including the kerberos settings."
 msgstr "Zunächst müssen wir die alten Datei ``/opt/otobo-docker/.env`` in ``.env.tmp`` umbenennen und erstellen dann eine neue Datei ``.env`` , die die Kerberos-Einstellungen beinhaltet."
 
 #: ../../content/sso-kerberos.rst:110
-#, fuzzy
 msgid "Now copy your existing configuration options to the new .env file (at least OTOBO_DB_ROOT_PASSWORD, OTOBO_NGINX_SSL_CERTIFICATE, OTOBO_NGINX_SSL_CERTIFICATE_KEY) and insert the following Kerberos settings:"
 msgstr "Kopiere jetzt deine bestehenden Konfigurationsoptionen in die neue .env-Datei (mindestens OTOBO_DB_ROOT_PASSWORD, OTOBO_NGINX_SSL_CERTIFICATE, OTOBO_NGINX_SSL_CERTIFICATE_KEY) und füge die folgenden Kerberos-Einstellungen hinzu:"
 
@@ -3065,7 +3035,6 @@ msgid "# Kerberos keytab OTOBO_NGINX_KERBEROS_KEYTAB=/opt/otobo-docker/nginx-con
 msgstr "# Kerberos keytab OTOBO_NGINX_KERBEROS_KEYTAB=/opt/otobo-docker/nginx-conf/krb5.keytab"
 
 #: ../../content/sso-kerberos.rst:116
-#, fuzzy
 msgid "# Kerberos config (Important, please comment out this option like here!) # In default configuration the krb5.conf file is generated automatically # OTOBO_NGINX_KERBEROS_CONFIG=/opt/otobo-docker/nginx-conf/krb5.conf"
 msgstr "# Kerberos-Konfig (Wichtig, bitte kommentiere diese Option wie hier aus!) # In der Standardkonfiguration wird die krb5.conf-Datei automatisch generiert # OTOBO_NGINX_KERBEROS_CONFIG=/opt/otobo-docker/nginx-conf/krb5.conf"
 
@@ -3102,12 +3071,10 @@ msgid "Tell OTOBO to use the Kerberos-Authentication"
 msgstr "In OTOBO angeben, dass die Kerberos-Authentifizierung verwendet werden soll"
 
 #: ../../content/sso-kerberos.rst:150
-#, fuzzy
 msgid "In case you have configured AD-Authentication, de-activate it (e.g. by commenting out the respective lines from your Kernel/Config.pm). The authentication will not take place via LDAP anymore."
 msgstr "Falls du AD-Authentifizierung konfiguriert hast, deaktiviere sie (z.B. durch Auskommentieren der entsprechenden Zeilen in deiner Kernel/Config.pm). Die Authentifizierung wird nicht mehr über LDAP stattfinden."
 
 #: ../../content/sso-kerberos.rst:153
-#, fuzzy
 msgid "To use Kerberos-Authentication take the Kerberos-lines from Kernel/Config/Defaults.pm and put it into you Kernel/Config.pm E.g. these lines could work:"
 msgstr "Um die Kerberos-Authentifizierung zu nutzen, nimm die Kerberos-Zeilen aus Kernel/Config/Defaults.pm und füge sie in deine Kernel/Config.pm ein. Zum Beispiel könnten diese Zeilen funktionieren:"
 
@@ -3176,7 +3143,6 @@ msgid "In case you stumble upon the issue that apparently the authentication wor
 msgstr "Falls Sie auf das Problem stoßen, dass die Authentifizierung scheinbar funktioniert, der Agent aber noch nicht in der Datenbank ist, funktioniert Ihre Synchronisierung (falls implementiert) möglicherweise nicht. Ein Fehler 52e (Erste Bindung fehlgeschlagen) weist darauf hin, dass mit Ihrem Suchbenutzer etwas nicht stimmt. Dies passiert, wenn Sie denselben Benutzer für die AD-Synchronisierung und als SSO-Benutzer verwenden. Bitte verwenden Sie hierfür separate AD-Benutzer. Um nicht eine neue Schlüsseltabelle erstellen und die oben genannten Schritte wiederholen zu müssen, könnte es einfacher sein, einen neuen Benutzer zur Verwendung in Ihrer AD-Synchronisierung zu erstellen (wahrscheinlich in Ihrer Kernel/Config.pm)."
 
 #: ../../content/sso-kerberos.rst:244
-#, fuzzy
 msgid "In case SSO is not working properly, make sure: * the user for which it is not working is in Active Directory * the system has to be in the domain * it is properly stated as a trusted page (see 'Configure Browser to understand Kerberos SSO')"
 msgstr "Falls SSO nicht richtig funktioniert, stelle sicher: * dass der Benutzer, für den es nicht funktioniert, im Active Directory ist * dass das System in der Domäne ist * dass es ordnungsgemäß als vertrauenswürdige Seite angegeben ist (siehe 'Browser konfigurieren, um Kerberos SSO zu verstehen')"
 
@@ -3265,7 +3231,6 @@ msgid "Check Apache configuration files"
 msgstr "Apache-Konfigurationsdateien überprüfen"
 
 #: ../../content/updating.rst:130
-#, fuzzy
 msgid "Newer versions of OTOBO may need you to adjust the apache configuration. From version 10.1 and onwards we moved from CGI to PSGI. Take a look at ``scripts/apache2-httpd-vhost-443.include.conf`` to see what settings needs to be adjusted/added."
 msgstr "Neuere Versionen von OTOBO können dich dazu veranlassen, die Apache-Konfiguration anzupassen. Ab Version 10.1 sind wir von CGI zu PSGI gewechselt. Schau dir ``scripts/apache2-httpd-vhost-443.include.conf`` an, um zu sehen, welche Einstellungen angepasst/hinzugefügt werden müssen."
 
@@ -3342,9 +3307,8 @@ msgid "Some maintainance tasks must be executed."
 msgstr "Einige Wartungsaufgaben sind auszuführen."
 
 #: ../../content/updating-docker.rst:30
-#, fuzzy
 msgid "In the sample commands below, the version **11.x.y**, corresponding to the tag **11_x_y**, is used as the example version. Please substitute it with the real version, e.g. **11.0.7**."
-msgstr "In den Beispielbefehlen unten wird beispielhaft die Version **10.x.y** und damit das Tag **10_x_Y** verwendet. Bitte tragen Sie stattdessen die jeweils aktuelle Version ein – z. B. **10.0.7**."
+msgstr "In den Beispielbefehlen unten wird beispielhaft die Version **11.x.y** und damit das Tag **11_x_Y** verwendet. Bitte tragen Sie stattdessen die jeweils aktuelle Version ein – z. B. **11.0.2**."
 
 #: ../../content/updating-docker.rst:34
 msgid "Updating the Docker Compose files"
@@ -3355,7 +3319,6 @@ msgid "The OTOBO Docker Compose files can change between releases. Therefore is 
 msgstr "Die OTOBO Docker Compose-Dateien wechseln von Release zu Release. Achten Sie deshalb darauf, jeweils das richtige Setup zu verwenden."
 
 #: ../../content/updating-docker.rst:41
-#, fuzzy
 msgid "See https://hub.docker.com/r/rotheross/otobo/tags for the available releases."
 msgstr "Alle verfügbaren Releases finden Sie unter ``https://hub.docker.com/repository/docker/rotheross/otobo/tags``."
 
@@ -3372,7 +3335,6 @@ msgid "Fetch the new Docker images"
 msgstr "Docker Images abrufen"
 
 #: ../../content/updating-docker.rst:65
-#, fuzzy
 msgid "Docker compose can be used for fetching the wanted images from https://hub.docker.com/r/rotheross/otobo/."
 msgstr "Die gewünschten Images können mit Docker Compose von https://hub.docker.com/repository/docker/rotheross/ abgerufen werden."
 
@@ -3381,7 +3343,6 @@ msgid "Update OTOBO"
 msgstr "OTOBO aktualisieren"
 
 #: ../../content/updating-docker.rst:80
-#, fuzzy
 msgid "Please note that minor or major upgrades must always be carried out one after the other. If you would like to upgrade from version 10.0.* to the latest 11.0.*,            please upgrade to 10.1 first and then to 11.0."
 msgstr "Bitte beachten Sie, dass kleinere oder größere Upgrades immer nacheinander durchgeführt werden müssen. Wenn Sie von Version 10.0.* auf die neueste Version 11.0.* upgraden möchten, aktualisieren Sie bitte zuerst auf 10.1 und dann auf 11.0."
 
