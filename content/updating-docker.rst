@@ -96,8 +96,8 @@ In this step the volume *otobo_opt_otobo* is updated and the following OTOBO con
     # inspect the update log
     docker_admin> docker-compose exec web cat /opt/otobo/var/log/update.log
 
-    **# For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
-    root> docker exec -it otobo_web_1 perl scripts/DBUpdate-to-11.0.pl
+    # **For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
+    docker_admin> docker exec -it otobo_web_1 perl scripts/DBUpdate-to-11.0.pl
 
 .. note::
 
@@ -109,6 +109,6 @@ In this step the volume *otobo_opt_otobo* is updated and the following OTOBO con
 
         docker_admin> ./scripts/update.sh --help
         docker_admin> ./scripts/update.sh
-        
-        ** For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
+
+        # **For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
         docker_admin> docker exec -it otobo_web_1 perl scripts/DBUpdate-to-11.0.pl
