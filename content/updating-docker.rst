@@ -18,7 +18,7 @@ When updating to a new version of OTOBO several things have to happen.
 .. note::
 
     In the sample commands below, the version **11.x.y**, corresponding to the tag **11_x_y**, is used as the example version.
-    Please substitute it with the real version, e.g. **11.0.7**.
+    Please substitute it with the real version, e.g. **11.0.2**.
 
 Updating the Docker Compose files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
