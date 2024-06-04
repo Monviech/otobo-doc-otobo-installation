@@ -67,7 +67,7 @@ Create a new volume for your custom nginx configuration
 
     docker volume create otobo_nginx_custom_config
     otobo_nginx_custom_config_mp=$(docker volume inspect --format '{{ .Mountpoint }}' otobo_nginx_custom_config)
-    docker create --name tmp-nginx-container rotheross/otobo-nginx-webproxy:latest-10_1 (achtung: Versionsnummer)
+    docker create --name tmp-nginx-container rotheross/otobo-nginx-webproxy:latest-11_0 (watch out: version number)
     docker cp tmp-nginx-container:/etc/nginx/templates /tmp
     docker cp tmp-nginx-container:/etc/nginx/templates/otobo_nginx-kerberos.conf.template.hidden $otobo_nginx_custom_config_mp/otobo_nginx.conf.template
     docker rm tmp-nginx-container
