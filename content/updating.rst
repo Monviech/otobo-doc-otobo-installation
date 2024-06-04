@@ -7,13 +7,11 @@ Updating
 
 .. note::
 
-   On Debian systems you may need to manually install some perl packages before upgrading from 10.0 to 10.1
+   On Debian systems you may need to manually install some perl packages before upgrading to 11.0.
 
     .. code-block:: bash
    
       apt-get install -y libarchive-zip-perl libtimedate-perl libdatetime-perl libconvert-binhex-perl libcgi-psgi-perl libdbi-perl libdbix-connector-perl libfile-chmod-perl liblist-allutils-perl libmoo-perl libnamespace-autoclean-perl libnet-dns-perl libnet-smtp-ssl-perl libpath-class-perl libsub-exporter-perl libtemplate-perl libtemplate-perl libtext-trim-perl libtry-tiny-perl libxml-libxml-perl libyaml-libyaml-perl libdbd-mysql-perl libapache2-mod-perl2 libmail-imapclient-perl libauthen-sasl-perl libauthen-ntlm-perl libjson-xs-perl libtext-csv-xs-perl libpath-class-perl libplack-perl libplack-middleware-header-perl libplack-perl libplack-middleware-reverseproxy-perl libencode-hanextra-perl libio-socket-ssl-perl libnet-ldap-perl libcrypt-eksblowfish-perl libxml-libxslt-perl libxml-parser-perl libconst-fast-perl
-
-
 
 Step 1: Stop All Relevant Services and the OTOBO Daemon
 ------------------------------------------------------
@@ -67,9 +65,9 @@ and unpack the source archive (for example, using ``tar``) into the directory ``
 .. code-block:: bash
 
     root> cd /root/otobo-update                                             # Change into the update directory
-    root> wget https://ftp.otobo.org/pub/otobo/otobo-latest-10.1.tar.gz     # Download he latest OTOBO 10.1 release
-    root> tar -xzf otobo-latest-10.1.tar.gz                                 # Unzip OTOBO
-    root> cp -r otobo-10.1.x/* /opt/otobo                                   # Copy the new otobo directory to /opt/otobo
+    root> wget https://ftp.otobo.org/pub/otobo/otobo-latest-11.0.tar.gz     # Download he latest OTOBO 11.0 release
+    root> tar -xzf otobo-latest-11.0.tar.gz                                 # Unzip OTOBO
+    root> cp -r otobo-11.0.x/* /opt/otobo                                   # Copy the new otobo directory to /opt/otobo
 
 
 Restore Old Configuration Files
@@ -117,11 +115,11 @@ Please execute the following command to set the file and directory permissions f
 Check Apache configuration files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Newer versions of OTOBO may need you to adjust the apache configuration. From version 10.1 and onwards we moved from CGI to PSGI. 
+Newer versions of OTOBO may need you to adjust the apache configuration. From version 10.1 and onwards we moved from CGI to PSGI.
 Take a look at ``scripts/apache2-httpd-vhost-443.include.conf`` to see what settings needs to be adjusted/added.
 
 
-Step 4: Check for new needed perl modules 
+Step 4: Check for new needed Perl modules
 ---------------------------------
 
 OTOBO needs new cpan packages for some version jumps. Please check if new packages are needed and install them if necessary.
@@ -130,7 +128,7 @@ OTOBO needs new cpan packages for some version jumps. Please check if new packag
    On Debian systems you may need to manually install some packages:
 
    .. code-block:: bash
-   
+
       apt-get install -y libarchive-zip-perl libtimedate-perl libdatetime-perl libconvert-binhex-perl libcgi-psgi-perl libdbi-perl libdbix-connector-perl libfile-chmod-perl liblist-allutils-perl libmoo-perl libnamespace-autoclean-perl libnet-dns-perl libnet-smtp-ssl-perl libpath-class-perl libsub-exporter-perl libtemplate-perl libtemplate-perl libtext-trim-perl libtry-tiny-perl libxml-libxml-perl libyaml-libyaml-perl libdbd-mysql-perl libapache2-mod-perl2 libmail-imapclient-perl libauthen-sasl-perl libauthen-ntlm-perl libjson-xs-perl libtext-csv-xs-perl libpath-class-perl libplack-perl libplack-middleware-header-perl libplack-perl libplack-middleware-reverseproxy-perl libencode-hanextra-perl libio-socket-ssl-perl libnet-ldap-perl libcrypt-eksblowfish-perl libxml-libxslt-perl libxml-parser-perl libconst-fast-perl
 
 

@@ -11,7 +11,7 @@ Follow the detailed steps in this chapter to install OTOBO on your server. You c
     By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.)
     are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved.
     You can find the instructions for Docker-based installation at
-    https://doc.otobo.org/manual/installation/10.1/en/content/installation-docker.html .
+    https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html .
 
 
 Preparation: Disable SELinux when it is installed and enabled
@@ -65,8 +65,8 @@ Unpack the source archive (for example, using ``tar``) into the directory ``/opt
 
     root> mkdir /opt/otobo-install && mkdir /opt/otobo                      # Create a temporary install directory
     root> cd /opt/otobo-install                                             # Change into the update directory
-    root> wget https://ftp.otobo.org/pub/otobo/otobo-latest-10.1.tar.gz     # Download he latest OTOBO 10 release
-    root> tar -xzf otobo-latest-10.1.tar.gz                                 # Unzip OTOBO
+    root> wget https://ftp.otobo.org/pub/otobo/otobo-latest-11.0.tar.gz     # Download he latest OTOBO 10 release
+    root> tar -xzf otobo-latest-11.0.tar.gz                                 # Unzip OTOBO
     root> cp -r otobo-10.x.x/* /opt/otobo                                     # Copy the new otobo directory to /opt/otobo
 
 

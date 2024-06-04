@@ -87,8 +87,8 @@ To remove the watermark, please remove the following line inside the file:
 
 .. note::
 
-    Please add the files to a opm package in the next step, so that the changes remain persistent. You can find instructions on how to do this in our    
-    Admin Manual: https://doc.otobo.org/manual/developer/10.1/en/content/how-to-publish-otobo-extensions.html
+    Please add the files to a opm package in the next step, so that the changes remain persistent. You can find instructions on how to do this in our
+    Admin Manual: https://doc.otobo.org/manual/developer/11.0/en/content/how-to-publish-otobo-extensions.html
 
 Change Customer Dashboard tiles and options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

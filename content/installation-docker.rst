@@ -50,7 +50,7 @@ the **root** user of the Docker host or a dedicated user with the required permi
 The Docker images will eventually be fetched from the repository https://hub.docker.com.
 But there are some setup and command files that need to be cloned from the *otobo-docker* Github repository.
 Make sure that you specify the branch that corresponds to the current version of OTOBO.
-For example, when *OTOBO 10.1.10* is the current version then please use the branch *rel-10_1*.
+For example, when *OTOBO 11.0.2* is the current version then please use the branch *rel-11_0*.
 
 .. note::
 
@@ -467,7 +467,7 @@ Prepare offline installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please download `the latest version of otobo-docker
-<https://doc.otobo.org/manual/installation/10.1/en/content/installation-docker.html#clone-the-otobo-docker-repo>`__
+<https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html#clone-the-otobo-docker-repo>`__
 on a system that has internet access and where docker is installed. Then navigate to
 the following folder *otobo-docker/docker-compose*.
 
@@ -495,10 +495,10 @@ Customizing OTOBO Docker Compose
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Instead of editing the files under *docker-compose/* and risking to overwrite your own options with the `next update
-<https://doc.otobo.org/manual/installation/10.1/en/content/updating-docker.html#updating-the-docker-compose-files>`_ of the otobo-docker folder,
+<https://doc.otobo.org/manual/installation/11.0/en/content/updating-docker.html#updating-the-docker-compose-files>`_ of the otobo-docker folder,
 it is advisable to create an extra YAML file where the specific services are overwritten with additional options.
 
-A common example would be to make the database container accessible from the outside via port 3306. 
+A common example would be to make the database container accessible from the outside via port 3306.
 For this you could create an extra docker compose file thats look like:
 
 .. code-block:: bash
@@ -521,7 +521,7 @@ Now we can use *docker-compose* to recreate our container
 .. code-block:: bash
 
     $ docker-compose stop # if otobo is running
-    $ docker-compose up -d 
+    $ docker-compose up -d
 
 With this procedure you can customize any service or volumes.
 
