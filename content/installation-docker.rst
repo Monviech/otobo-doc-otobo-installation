@@ -27,6 +27,20 @@ The minimal versions of required software, that have been tested, are listed her
     https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
     and https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04.
 
+.. note::
+
+    For Ubuntu 24.04 LTS the usage of Compose V2 is recommended.
+
+    .. code-block:: bash
+        root> apt update
+        root> apt install docker.io docker-compose-v2
+
+    Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used
+    in order to stay compatible with the ``docker-compose`` command known from Compose V1.
+
+    .. code-block:: bash
+       root> alias docker-compose='docker compose'
+
 git, Docker, and Docker Compose can be installed with the standard system tools.
 Here is an example for installation on Ubuntu 20.04:
 
