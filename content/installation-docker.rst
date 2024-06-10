@@ -42,11 +42,11 @@ The minimal versions of required software, that have been tested, are listed her
        root> alias docker-compose='docker compose'
 
 git, Docker, and Docker Compose can be installed with the standard system tools.
-Here is an example for installation on Ubuntu 20.04:
+Here is an example for installation on Ubuntu 20.04 Focal Fossa:
 
 .. code-block:: bash
 
-   root> apt-get install git docker docker-compose curl
+   root> apt install git docker.io docker-compose curl
    root> systemctl enable docker
 
 Please check the Git and the Docker documentation for instructions on further setup.
