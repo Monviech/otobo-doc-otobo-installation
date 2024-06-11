@@ -10,7 +10,7 @@ This work is copyrighted by OTRS AG (https://otrs.com),
 Zimmersmühlenweg 11, 61440 Oberursel, Germany.
 
 Copyright © for modifications and amendments 2019-2022 ROTHER OSS GmbH
-(https://otobo.de), Oberwalting 31, 94339 Leiblfing, Germany
+(https://otobo.io), Oberwalting 31, 94339 Leiblfing, Germany
 
 Terms and Conditions OTRS:
 Permission is granted to copy, distribute and/or modify this document under the
@@ -26,10 +26,10 @@ published by the Free Software Foundation; with no Invariant Sections, no
 Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included
 in the section entitled "COPYING".
 
-Published by: Rother OSS GmbH, (https://otobo.de),
+Published by: Rother OSS GmbH, (https://otobo.io),
 Oberwalting 31, 94339 Leiblfing, Germany.
 
-Authors: OTRS AG (original version), Rother OSS GmbH (https://otobo.de).
+Authors: OTRS AG (original version), Rother OSS GmbH (https://otobo.io).
 
 .. toctree::
    :maxdepth: 3
