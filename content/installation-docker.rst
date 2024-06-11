@@ -23,12 +23,6 @@ The minimal versions of required software, that have been tested, are listed her
 
 .. note::
 
-    To get the required minimal versions on Ubuntu 18.04 follow the instructions in
-    https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
-    and https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04.
-
-.. note::
-
     For Ubuntu 24.04 LTS the usage of Compose V2 is recommended.
 
     .. code-block:: bash
@@ -141,7 +135,7 @@ nginx needs for SSL encryption a certificate and a private key.
     For testing and development a self-signed certificate can be used. However for productive use you should
     work with regular registered certificates.
 
-    See e.g. https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-18-04
+    See e.g. https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu
     on how to create self-signed certificates.
 
 .. note::
@@ -707,11 +701,9 @@ Finally, here is a highly subjective collection of links.
 
 **Tips and hints**
 
-* `Newer version of Docker Compose on Ubuntu 18.04 LTS <https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04>`_
-* `Newer version of Docker on Ubuntu 18.04 LTS <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04>`_
 * `Clean up unused images <https://forums.docker.com/t/command-to-remove-all-unused-images>`_
 * `Docker Host IP <https://nickjanetakis.com/blog/docker-tip-65-get-your-docker-hosts-ip-address-from-in-a-container>`_
-* `Self signed certificate <https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-18-04>`_
+* `Self signed certificate <https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu >`_
 
 **Troubleshooting**
 
