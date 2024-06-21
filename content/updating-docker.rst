@@ -81,6 +81,8 @@ In this step the volume *otobo_opt_otobo* is updated and the following OTOBO con
 - Maint::Config::Rebuild
 - Maint::Cache::Delete
 
+For minor and major version upgrades, prior to this also update tasks for the core system have to be performed
+
 .. code-block:: bash
 
     # stop and remove the containers, but keep the named volumes
@@ -95,26 +97,24 @@ In this step the volume *otobo_opt_otobo* is updated and the following OTOBO con
     # a quick sanity check
     docker_admin> docker-compose ps
 
+    # ** Only for minor or major release upgrades! **
+    # run upgrade tasks for the OTOBO core (for example when upgrading from 10.1 to 11.0)
+    docker_admin> docker-compose exec web perl scripts/DBUpdate-to-11.0.pl
+
     # complete the update, with running database
     docker_admin> docker-compose exec web /opt/otobo_install/entrypoint.sh do_update_tasks
 
     # inspect the update log
     docker_admin> docker-compose exec web cat /opt/otobo/var/log/update.log
 
-    # **For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
-    docker_admin> docker-compose exec web perl scripts/DBUpdate-to-11.0.pl
-
 .. note::
 
-    Running the above mentioned commands can be automated with the help of
+    For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of
     the script *scripts/update.sh*.
     This script runs the commands starting with the **docker-compose pull** command. Note that
-    that calling the database upgrade scripts is not included.
+    that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades.
 
     .. code-block:: bash
 
         docker_admin> ./scripts/update.sh --help
         docker_admin> ./scripts/update.sh
-
-        # **For minor or major release upgrades, you also have to run the upgrade script (for example to upgrade from 10.1 to 11.0)**
-        docker_admin> docker-compose exec web perl scripts/DBUpdate-to-11.0.pl
