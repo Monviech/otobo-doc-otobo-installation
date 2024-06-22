@@ -8,16 +8,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Japanese <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -320,7 +321,7 @@ msgstr "この章の詳細な手順に従ってサーバーにOTOBOをインス�
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "OTOBOのインストールにはDockerとDocker Composeを推奨します。提供されているDockerイメージを使用することで、推奨されるすべての依存関係（Elasticsearch、Redis Cacheなど）が自動的にインストールされ、設定されます。そのため、アップデートが大幅に簡素化され、パフォーマンスが向上しました。Dockerベースのインストール手順は https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html にあります。"
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -809,11 +810,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Ubuntu 24.04 LTSでは、Compose V2の使用を推奨します。"
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2 は ``docker`` コマンドのプラグインとして実装されています。Compose V1で知られている ``docker-compose`` コマンドとの互換性を保つために、エイリアスを使用することができます。"
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4148,11 +4149,11 @@ msgstr "Maint::Cache::Delete"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "マイナーバージョンやメジャーバージョンのアップグレードでは、これに先立ち、コアシステムのアップデート作業も行わなければならない。"
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "単純なパッチレベルのアップデート（例えば11.0.2から11.0.3）の場合、 *scripts/update.sh*スクリプトの助けを借りて、上記のコマンドの実行を自動化できます。このスクリプトは **docker-compose pull** コマンドから始まるコマンドを実行します。このスクリプトは **docker-compose pull**コマンドから始まるコマンドを実行します。データベースのアップグレードスクリプトの呼び出しは含まれていないため、バージョンアップには使用できないことに注意してください。"
 
 #~ msgid "These instructions apply only to OTOBO 10.0.6 or later."
 #~ msgstr "これらの指示はOTOBO 10.0.6以降にのみ適用されます。"

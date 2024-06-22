@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:47+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Slovenian <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -330,7 +331,7 @@ msgstr "Za namestitev OTOBO v strežnik sledite podrobnim korakom v tem poglavju
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "Za namestitev OTOBO priporočamo Docker in Docker Compose. Z uporabo priloženih slik Docker so vse priporočene odvisnosti (kot so Elasticsearch, Redis Cache itd.) nameščene in konfigurirane samodejno. Posodobitve so tako močno poenostavljene, izboljšana pa je tudi zmogljivost. Navodila za namestitev na podlagi programa Docker najdete na naslovu https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -819,11 +820,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Za Ubuntu 24.04 LTS je priporočljiva uporaba programa Compose V2."
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2 se izvaja kot vtičnik ukaza ``docker``. Za združljivost z ukazom ``docker-compose``, znanim iz Compose V1, lahko uporabite vzdevek."
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4168,11 +4169,11 @@ msgstr "Maint::Cache::Delete"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "Pri manjših in večjih nadgradnjah različic je treba pred tem opraviti tudi naloge posodobitve za osrednji sistem."
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "Za preproste posodobitve na ravni popravkov (npr. z 11.0.2 na 11.0.3) lahko izvajanje zgoraj navedenih ukazov avtomatizirate s pomočjo skripte *scripts/update.sh*. Ta skripta izvaja ukaze, ki se začnejo z ukazom **docker-compose pull**. Upoštevajte, da klicanje skript za nadgradnjo zbirke podatkov ni vključeno in ga zato ni mogoče uporabiti za nadgradnjo različice."
 
 #~ msgid "First we need to make sure that the backup files are not created in the file system that is internal to the container. Because in that case all data would be lost when the container is stopped. Therefore the backup directory must be in a volume. For now we only consider the most simple case, where the backup dir is a local dir on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host, and ``/otobo_backup`` as the location in the container."
 #~ msgstr "Najprej moramo poskrbeti, da se varnostne kopije ne ustvarijo v datotečnem sistemu, ki je notranji za vsebnik. V tem primeru bi bili vsi podatki izgubljeni, ko bi se vsebnik ustavil. Zato mora biti imenik za varnostno kopijo v zvezku. Za zdaj bomo obravnavali le najpreprostejši primer, ko je rezervni imenik lokalni imenik v gostitelju Docker. Lokacijo rezervnega dirja v vsebniku lahko poljubno izberete. V tem primeru smo za lokacijo na gostitelju izbrali lokalni dir ``otobo_backup``, za lokacijo v vsebniku pa ``/otobo_backup``."

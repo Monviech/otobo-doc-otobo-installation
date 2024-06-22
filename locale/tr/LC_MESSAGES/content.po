@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:47+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Turkish <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -330,7 +331,7 @@ msgstr "OTOBO'yu sunucunuza kurmak için bu bölümdeki ayrıntılı adımları 
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "OTOBO kurulumu için Docker ve Docker Compose'u öneriyoruz. Sağlanan Docker imajlarını kullanarak, önerilen tüm bağımlılıklar (Elasticsearch, Redis Cache, vb.) otomatik olarak kurulur ve yapılandırılır. Böylece güncellemeler büyük ölçüde basitleştirilmiş ve performans iyileştirilmiştir. Docker tabanlı kurulum için talimatları https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html adresinde bulabilirsiniz."
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -819,11 +820,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Ubuntu 24.04 LTS için Compose V2'nin kullanılması tavsiye edilir."
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2, ``docker`` komutunun bir eklentisi olarak uygulanmaktadır. Compose V1'den bilinen ``docker-compose`` komutu ile uyumlu kalmak için bir takma ad kullanılabilir."
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4168,11 +4169,11 @@ msgstr "Maint::Cache::Delete"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "Küçük ve büyük sürüm yükseltmeleri için, bundan önce çekirdek sistem için güncelleme görevlerinin de gerçekleştirilmesi gerekir"
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "Basit yama seviyesi güncellemeleri için (örneğin 11.0.2'den 11.0.3'e) yukarıda belirtilen komutların çalıştırılması *scripts/update.sh* betiği yardımıyla otomatikleştirilebilir. Bu betik **docker-compose pull** komutu ile başlayan komutları çalıştırır. Veritabanı yükseltme komut dosyalarının çağrılmasının dahil edilmediğini ve bu nedenle sürüm yükseltmeleri için kullanılamayacağını unutmayın."
 
 #~ msgid "First we need to make sure that the backup files are not created in the file system that is internal to the container. Because in that case all data would be lost when the container is stopped. Therefore the backup directory must be in a volume. For now we only consider the most simple case, where the backup dir is a local dir on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host, and ``/otobo_backup`` as the location in the container."
 #~ msgstr "Öncelikle yedekleme dosyalarının konteynerin dahili dosya sisteminde oluşturulmadığından emin olmamız gerekir. Çünkü bu durumda konteyner durdurulduğunda tüm veriler kaybolacaktır. Bu nedenle yedekleme dizini bir birimde olmalıdır. Şimdilik, yedekleme dizininin Docker ana bilgisayarında yerel bir dizin olduğu en basit durumu ele alıyoruz. Konteynerdeki yedekleme dizininin konumu isteğe bağlı olarak seçilebilir. Bu örnekte, ana bilgisayardaki konum olarak ``otobo_backup`` yerel dizinini ve konteynerdeki konum olarak ``/otobo_backup`` dizinini seçiyoruz."

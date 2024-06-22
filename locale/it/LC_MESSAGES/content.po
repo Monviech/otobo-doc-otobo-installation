@@ -7,16 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.1\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Italian <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -327,7 +328,7 @@ msgstr "Segui i passaggi dettagliati in questo capitolo per installare OTOBO sul
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "Per l'installazione di OTOBO consigliamo Docker e Docker Compose. Utilizzando le immagini Docker fornite, tutte le dipendenze consigliate (come Elasticsearch, Redis Cache, ecc.) vengono installate e configurate automaticamente. Gli aggiornamenti sono quindi notevolmente semplificati e le prestazioni sono state migliorate. Le istruzioni per l'installazione basata su Docker sono disponibili all'indirizzo https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html."
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -816,11 +817,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Per Ubuntu 24.04 LTS si raccomanda l'uso di Compose V2."
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2 è implementato come plugin del comando ``docker``. È possibile utilizzare un alias per rimanere compatibili con il comando ``docker-compose`` conosciuto da Compose V1."
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4155,11 +4156,11 @@ msgstr "Maint::Cache::Delete"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "Per gli aggiornamenti di versione minori e maggiori, prima di questo devono essere eseguite anche le operazioni di aggiornamento del sistema centrale."
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "Per semplici aggiornamenti a livello di patch (ad esempio da 11.0.2 a 11.0.3) l'esecuzione dei comandi sopra citati può essere automatizzata con l'aiuto dello script *scripts/update.sh*. Questo script esegue i comandi a partire dal comando **docker-compose pull**. Si noti che la chiamata agli script di aggiornamento del database non è inclusa e quindi non può essere usata per gli aggiornamenti di versione."
 
 #~ msgid "These instructions apply only to OTOBO 10.0.6 or later."
 #~ msgstr "Queste istruzioni si applicano solo a OTOBO 10.0.6 o versioni successive."

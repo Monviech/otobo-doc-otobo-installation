@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Indonesian <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -330,7 +331,7 @@ msgstr "Ikuti langkah-langkah terperinci dalam bab ini untuk menginstal OTOBO pa
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "Kami merekomendasikan Docker dan Docker Compose untuk instalasi OTOBO. Dengan menggunakan citra Docker yang disediakan, semua dependensi yang direkomendasikan (seperti Elasticsearch, Redis Cache, dll.) terinstal dan terkonfigurasi secara otomatis. Pembaruan dengan demikian sangat disederhanakan dan kinerjanya telah ditingkatkan. Anda dapat menemukan petunjuk untuk instalasi berbasis Docker di https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -819,11 +820,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Untuk Ubuntu 24.04 LTS, penggunaan Compose V2 direkomendasikan."
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2 diimplementasikan sebagai plugin dari perintah ``docker``. Alias dapat digunakan agar tetap kompatibel dengan perintah ``docker-compose`` yang dikenal dari Compose V1."
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4168,11 +4169,11 @@ msgstr "Memelihara::Cache::Hapus"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "Untuk peningkatan versi minor dan mayor, sebelumnya juga harus dilakukan tugas pembaruan untuk sistem inti"
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "Untuk pembaruan tingkat patch sederhana (misalnya 11.0.2 ke 11.0.3), menjalankan perintah-perintah yang disebutkan di atas dapat diotomatisasi dengan bantuan skrip *scripts/update.sh*. Skrip ini menjalankan perintah yang dimulai dengan perintah **docker-compose pull**. Perhatikan bahwa pemanggilan skrip pemutakhiran basis data tidak disertakan dan oleh karena itu, skrip ini tidak dapat digunakan untuk pemutakhiran versi."
 
 #~ msgid "First we need to make sure that the backup files are not created in the file system that is internal to the container. Because in that case all data would be lost when the container is stopped. Therefore the backup directory must be in a volume. For now we only consider the most simple case, where the backup dir is a local dir on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host, and ``/otobo_backup`` as the location in the container."
 #~ msgstr "Pertama, kita perlu memastikan bahwa file cadangan tidak dibuat dalam sistem file yang ada di dalam kontainer. Karena dalam hal ini, semua data akan hilang ketika kontainer dihentikan. Oleh karena itu direktori cadangan harus berada di dalam sebuah volume. Untuk saat ini kita hanya mempertimbangkan kasus yang paling sederhana, dimana dir backup adalah dir lokal pada host Docker. Lokasi direktori cadangan di dalam kontainer dapat dipilih secara acak. Pada contoh ini, kita memilih dir lokal ``otobo_backup`` sebagai lokasi pada hos, dan ``/otobo_backup`` sebagai lokasi pada kontainer."

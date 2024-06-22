@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Greek <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -330,7 +331,7 @@ msgstr "Ακολουθήστε τα λεπτομερή βήματα σε αυτ�
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "Συνιστούμε το Docker και το Docker Compose για την εγκατάσταση του OTOBO. Με τη χρήση των παρεχόμενων εικόνων Docker, όλες οι συνιστώμενες εξαρτήσεις (όπως το Elasticsearch, το Redis Cache κ.λπ.) εγκαθίστανται και ρυθμίζονται αυτόματα. Έτσι, οι ενημερώσεις απλοποιούνται σημαντικά και οι επιδόσεις έχουν βελτιωθεί. Μπορείτε να βρείτε τις οδηγίες για την εγκατάσταση με βάση το Docker στη διεύθυνση https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -819,11 +820,11 @@ msgstr "Git 2.17.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "Για το Ubuntu 24.04 LTS συνιστάται η χρήση του Compose V2."
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Το Compose V2 υλοποιείται ως ένα πρόσθετο της εντολής ``docker``. Ένα ψευδώνυμο μπορεί να χρησιμοποιηθεί για να παραμείνει συμβατό με την εντολή ``docker-compose`` που είναι γνωστή από την Compose V1."
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4168,11 +4169,11 @@ msgstr "Συντήρηση::Cache::Διαγραφή"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "Για μικρές και μεγάλες αναβαθμίσεις εκδόσεων, πριν από αυτό πρέπει να εκτελεστούν επίσης εργασίες ενημέρωσης για το βασικό σύστημα."
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "Για απλές ενημερώσεις επιπέδου patch (π.χ. 11.0.2 σε 11.0.3), η εκτέλεση των παραπάνω εντολών μπορεί να αυτοματοποιηθεί με τη βοήθεια του σεναρίου *scripts/update.sh*. Αυτό το σενάριο εκτελεί τις εντολές που ξεκινούν με την εντολή **docker-compose pull**. Σημειώστε ότι η κλήση των σεναρίων αναβάθμισης της βάσης δεδομένων δεν περιλαμβάνεται και συνεπώς δεν μπορεί να χρησιμοποιηθεί για αναβαθμίσεις εκδόσεων."
 
 #~ msgid "First we need to make sure that the backup files are not created in the file system that is internal to the container. Because in that case all data would be lost when the container is stopped. Therefore the backup directory must be in a volume. For now we only consider the most simple case, where the backup dir is a local dir on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host, and ``/otobo_backup`` as the location in the container."
 #~ msgstr "Πρώτα πρέπει να βεβαιωθούμε ότι τα αρχεία αντιγράφων ασφαλείας δεν δημιουργούνται στο σύστημα αρχείων που είναι εσωτερικό του περιέκτη. Διότι σε αυτή την περίπτωση όλα τα δεδομένα θα χάνονταν όταν σταματούσε το εμπορευματοκιβώτιο. Επομένως, ο κατάλογος αντιγράφων ασφαλείας πρέπει να βρίσκεται σε έναν τόμο. Προς το παρόν εξετάζουμε μόνο την πιο απλή περίπτωση, όπου ο backup dir είναι ένας τοπικός dir στον κεντρικό υπολογιστή Docker. Η θέση του backup dir στο container μπορεί να επιλεγεί αυθαίρετα. Σε αυτό το παράδειγμα επιλέγουμε τον τοπικό κατάλογο ``otobo_backup`` ως τοποθεσία στον κεντρικό υπολογιστή και το ``/otobo_backup`` ως τοποθεσία στον περιέκτη."

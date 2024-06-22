@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 11.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-21 12:44+0200\n"
-"PO-Revision-Date: 2024-05-16 22:46+0000\n"
+"PO-Revision-Date: 2024-06-21 22:45+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/zh_Hans/>\n"
-"Language: zh_Hans_CN\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/backup-restore.rst:12
@@ -330,7 +331,7 @@ msgstr "按照本章的详细步骤在你的服务器上安装OTOBO，而后你�
 
 #: ../../content/installation.rst:20
 msgid "We recommend Docker and Docker Compose for the OTOBO installation. By using the provided Docker images, all recommended dependencies (such as Elasticsearch, Redis Cache, etc.) are installed and configured automatically. Updates are thus greatly simplified and the performance has been improved. You can find the instructions for Docker-based installation at https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html ."
-msgstr ""
+msgstr "我们推荐使用 Docker 和 Docker Compose 来安装 OTOBO。通过使用提供的 Docker 映像，所有推荐的依赖项（如 Elasticsearch、Redis Cache 等）都会自动安装和配置。因此，更新大大简化，性能也得到提高。有关基于 Docker 的安装说明，请访问 https://doc.otobo.org/manual/installation/11.0/en/content/installation-docker.html 。"
 
 #: ../../content/installation.rst:28
 #, fuzzy
@@ -819,11 +820,11 @@ msgstr "Git 2.25.1"
 
 #: ../../content/installation-docker.rst:36
 msgid "For Ubuntu 24.04 LTS the usage of Compose V2 is recommended."
-msgstr ""
+msgstr "对于 Ubuntu 24.04 LTS，建议使用 Compose V2。"
 
 #: ../../content/installation-docker.rst:42
 msgid "Compose V2 is implemented as a plugin of the command ``docker``. An alias can be used in order to stay compatible with the ``docker-compose`` command known from Compose V1."
-msgstr ""
+msgstr "Compose V2 是作为命令 ``docker`` 的插件实现的。为了与 Compose V1 中的 ``docker-compose`` 命令保持兼容，可以使用别名。"
 
 #: ../../content/installation-docker.rst:48
 #, fuzzy
@@ -4168,11 +4169,11 @@ msgstr "维护::缓存::删除"
 
 #: ../../content/updating-docker.rst:94
 msgid "For minor and major version upgrades, prior to this also update tasks for the core system have to be performed"
-msgstr ""
+msgstr "对于次要和主要版本升级，在此之前还必须执行核心系统的更新任务"
 
 #: ../../content/updating-docker.rst:122
 msgid "For simple patchlevel updates (e.g. 11.0.2 to 11.0.3) running the above mentioned commands can be automated with the help of the script *scripts/update.sh*. This script runs the commands starting with the **docker-compose pull** command. Note that that calling the database upgrade scripts is not included and therefor it cannot be used for version upgrades."
-msgstr ""
+msgstr "对于简单的补丁级更新（例如从 11.0.2 升级到 11.0.3），可以在脚本 *scripts/update.sh* 的帮助下自动运行上述命令。该脚本运行从 **docker-compose pull** 命令开始的命令。请注意，调用数据库升级脚本并不包括在内，因此不能用于版本升级。"
 
 #~ msgid "First we need to make sure that the backup files are not created in the file system that is internal to the container. Because in that case all data would be lost when the container is stopped. Therefore the backup directory must be in a volume. For now we only consider the most simple case, where the backup dir is a local dir on the Docker host. The location of the backup dir in the container can be arbitrarily chosen. In this example we choose the local dir ``otobo_backup`` as the location on the host, and ``/otobo_backup`` as the location in the container."
 #~ msgstr "首先我们要确认备份文件创建时所在的文件系统，不是一个容器内部的文件系统。因为在那种情况下，当容器被停止后，所有的数据都会丢失。所以，备份目录必须在一个卷。现在我们先考虑最简单的一种情况，备份目录是Docker主机的一个本地目录。备份目录在容器中的位置可以随意选择。在本例中我们选择本地目录``otobo_backup``作为备份目录在主机的位置， 而在容器中的位置就是``/otobo_backup`` 。"
