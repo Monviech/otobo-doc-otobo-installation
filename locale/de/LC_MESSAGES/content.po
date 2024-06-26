@@ -12,13 +12,14 @@
 # sr <sr@rother-oss.com>, 2024.
 # DeepL <noreply-mt-deepl@weblate.org>, 2024.
 # Stefan Rother <sr@rother-oss.com>, 2024.
+# Markus Hlinka <mah@rother-oss.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide 10.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: it@otobo.de\n"
 "POT-Creation-Date: 2024-06-25 00:45+0200\n"
-"PO-Revision-Date: 2024-06-21 22:45+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"PO-Revision-Date: 2024-06-25 22:46+0000\n"
+"Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/manual-otobo-installation/installation-manual-otobo-11/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -241,9 +242,8 @@ msgid "This work is copyrighted by OTRS AG (https://otrs.com), Zimmersmühlenweg
 msgstr "Dieses Dokument unterliegt dem Copyright der OTRS AG (https://otrs.com), Zimmersmühlenweg 11, 61440 Oberursel, Deutschland."
 
 #: ../../content/index.rst:22
-#, fuzzy
 msgid "Copyright © for modifications and amendments 2019-2022 ROTHER OSS GmbH (https://otobo.io), Oberwalting 31, 94339 Leiblfing, Germany"
-msgstr "Anpassungen und Ergänzungen unterliegen dem Copyright © der Rother OSS GmbH (https://otobo.de), Oberwalting 31, 94339 Leiblfing, Deutschland."
+msgstr "Anpassungen und Ergänzungen unterliegen dem Copyright © der Rother OSS GmbH (https://otobo.io), Oberwalting 31, 94339 Leiblfing, Deutschland"
 
 #: ../../content/index.rst:25
 msgid "Terms and Conditions OTRS: Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license can be found on the GNU website."
@@ -301,7 +301,7 @@ msgstr "Der Befehl ``sestatus`` gibt den SELinux-Status aus und informiert darü
 
 #: ../../content/installation.rst:41
 msgid "Here's how to disable SELinux for RHEL/CentOS/Fedora."
-msgstr "So deaktivieren Sie SELinux unter RHEL/CentOS/Fedora:"
+msgstr "So deaktivieren Sie SELinux unter RHEL/CentOS/Fedora."
 
 #: ../../content/installation.rst:43
 msgid "Configure ``SELINUX=disabled`` in the ``/etc/selinux/config`` file:"
@@ -816,7 +816,7 @@ msgstr "Das Zertifikat und der private Schlüssel werden in einem Volume hinterl
 
 #: ../../content/installation-docker.rst:166
 msgid "The names of the copied files need to be set in our newly created *.env* file. E.g."
-msgstr "Die Namen der kopierten Dateien müssen in die eben angelegte *.env*-Datei eingegeben werden. Beispiel:"
+msgstr "Die Namen der kopierten Dateien müssen in die eben angelegte *.env*-Datei eingegeben werden. Z.B."
 
 #: ../../content/installation-docker.rst:168
 msgid "``OTOBO_NGINX_SSL_CERTIFICATE=/etc/nginx/ssl/ssl-cert.crt`` and ``OTOBO_NGINX_SSL_CERTIFICATE_KEY=/etc/nginx/ssl/ssl-key.key``"
@@ -3147,9 +3147,8 @@ msgid "It is highly recommended to perform a test update on a separate testing m
 msgstr "Es wird dringend empfohlen, zuerst ein Test-Update auf einem separaten Testsystem durchzuführen."
 
 #: ../../content/updating.rst:20
-#, fuzzy
 msgid "On Debian systems you may need to manually install some perl packages before upgrading to 11.0."
-msgstr "Auf Debian-System kann es erforderlich sein, dass man einige perl-Pakete manuell installieren muss, bevor man von 10.0 auf 10.1 upgraden kann"
+msgstr "Auf Debian-System kann es erforderlich sein, dass man einige perl-Pakete manuell installieren muss, bevor man auf 11.0 upgraden kann."
 
 #: ../../content/updating.rst:27
 msgid "Step 1: Stop All Relevant Services and the OTOBO Daemon"
